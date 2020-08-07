@@ -8,18 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		5138EA4224DDB21400CCBEED /* SwiftUI_SetGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5138EA4124DDB21400CCBEED /* SwiftUI_SetGameApp.swift */; };
-		5138EA4424DDB21400CCBEED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5138EA4324DDB21400CCBEED /* ContentView.swift */; };
 		5138EA4624DDB21600CCBEED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5138EA4524DDB21600CCBEED /* Assets.xcassets */; };
 		5138EA4924DDB21600CCBEED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5138EA4824DDB21600CCBEED /* Preview Assets.xcassets */; };
+		5138EA5124DDB26A00CCBEED /* Diamond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5138EA5024DDB26A00CCBEED /* Diamond.swift */; };
+		5138EA5524DDB27900CCBEED /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5138EA5224DDB27900CCBEED /* Grid.swift */; };
+		5138EA5624DDB27900CCBEED /* GridLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5138EA5324DDB27900CCBEED /* GridLayout.swift */; };
+		5138EA5724DDB27900CCBEED /* Array+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5138EA5424DDB27900CCBEED /* Array+Identifiable.swift */; };
+		5138EA5C24DDB29000CCBEED /* SetGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5138EA5824DDB29000CCBEED /* SetGameViewModel.swift */; };
+		5138EA5D24DDB29000CCBEED /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5138EA5924DDB29000CCBEED /* CardView.swift */; };
+		5138EA5E24DDB29000CCBEED /* SetGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5138EA5A24DDB29000CCBEED /* SetGameView.swift */; };
+		5138EA5F24DDB29000CCBEED /* SetGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5138EA5B24DDB29000CCBEED /* SetGame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5138EA3E24DDB21400CCBEED /* SwiftUI SetGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI SetGame.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5138EA4124DDB21400CCBEED /* SwiftUI_SetGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_SetGameApp.swift; sourceTree = "<group>"; };
-		5138EA4324DDB21400CCBEED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5138EA4524DDB21600CCBEED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5138EA4824DDB21600CCBEED /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5138EA4A24DDB21600CCBEED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5138EA5024DDB26A00CCBEED /* Diamond.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Diamond.swift; sourceTree = "<group>"; };
+		5138EA5224DDB27900CCBEED /* Grid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
+		5138EA5324DDB27900CCBEED /* GridLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridLayout.swift; sourceTree = "<group>"; };
+		5138EA5424DDB27900CCBEED /* Array+Identifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Identifiable.swift"; sourceTree = "<group>"; };
+		5138EA5824DDB29000CCBEED /* SetGameViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetGameViewModel.swift; sourceTree = "<group>"; };
+		5138EA5924DDB29000CCBEED /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		5138EA5A24DDB29000CCBEED /* SetGameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetGameView.swift; sourceTree = "<group>"; };
+		5138EA5B24DDB29000CCBEED /* SetGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetGame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +67,14 @@
 			isa = PBXGroup;
 			children = (
 				5138EA4124DDB21400CCBEED /* SwiftUI_SetGameApp.swift */,
-				5138EA4324DDB21400CCBEED /* ContentView.swift */,
+				5138EA5924DDB29000CCBEED /* CardView.swift */,
+				5138EA5B24DDB29000CCBEED /* SetGame.swift */,
+				5138EA5824DDB29000CCBEED /* SetGameViewModel.swift */,
+				5138EA5A24DDB29000CCBEED /* SetGameView.swift */,
+				5138EA5024DDB26A00CCBEED /* Diamond.swift */,
+				5138EA5424DDB27900CCBEED /* Array+Identifiable.swift */,
+				5138EA5224DDB27900CCBEED /* Grid.swift */,
+				5138EA5324DDB27900CCBEED /* GridLayout.swift */,
 				5138EA4524DDB21600CCBEED /* Assets.xcassets */,
 				5138EA4A24DDB21600CCBEED /* Info.plist */,
 				5138EA4724DDB21600CCBEED /* Preview Content */,
@@ -138,8 +159,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5138EA4424DDB21400CCBEED /* ContentView.swift in Sources */,
+				5138EA5D24DDB29000CCBEED /* CardView.swift in Sources */,
+				5138EA5F24DDB29000CCBEED /* SetGame.swift in Sources */,
+				5138EA5724DDB27900CCBEED /* Array+Identifiable.swift in Sources */,
+				5138EA5124DDB26A00CCBEED /* Diamond.swift in Sources */,
 				5138EA4224DDB21400CCBEED /* SwiftUI_SetGameApp.swift in Sources */,
+				5138EA5C24DDB29000CCBEED /* SetGameViewModel.swift in Sources */,
+				5138EA5E24DDB29000CCBEED /* SetGameView.swift in Sources */,
+				5138EA5524DDB27900CCBEED /* Grid.swift in Sources */,
+				5138EA5624DDB27900CCBEED /* GridLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
