@@ -15,32 +15,33 @@ struct CardView: View {
             RoundedRectangle(cornerRadius: cardCornerRadius).fill(cardBaseColor)
             RoundedRectangle(cornerRadius: cardCornerRadius).fill(cardHighlightColor).opacity(cardHighlightOpacity)
             RoundedRectangle(cornerRadius: cardCornerRadius).stroke(lineWidth: cardEdgeWidth).foregroundColor(cardEdgeColor)
-            shapeView()
-                .padding(shapeViewPadding)
-                .foregroundColor(shapeColor)
-                .transition(.scale(scale: 2))
+            
+            VStack(spacing: shapeSpacing) {
+                ForEach(0..<card.numberOfShapes.rawValue) { _ in
+                    shapeBody(for: card.shape, strokeWidth: shapeEdgeWidth, fillOpacity: shapeOpacity)
+                        .aspectRatio(shapeAspectRatio, contentMode: .fit)
+                }
+            }
+            .padding(shapeViewPadding)
+            .foregroundColor(shapeColor)
         }
     }
     
-    private func shapeView() -> some View {
-        VStack(spacing: shapeSpacing) {
-            ForEach(0..<card.numberOfShapes) { _ in
-                ZStack {
-                    switch card.shape {
-                        case .Diamond:
-                            Diamond().opacity(shapeOpacity)
-                            Diamond().stroke(lineWidth: shapeEdgeWidth)
-                        case .Squiggle:
-                            Rectangle().opacity(shapeOpacity)
-                            Rectangle().stroke(lineWidth: shapeEdgeWidth)
-                        case .Oval:
-                            Capsule().opacity(shapeOpacity)
-                            Capsule().stroke(lineWidth: shapeEdgeWidth)
-                    }
-                }
-                .aspectRatio(shapeAspectRatio, contentMode: .fit)
+    private func shapeBody(for shape: SetGame.Card.Shape, strokeWidth: CGFloat, fillOpacity: Double) -> some View {
+        ZStack {
+            switch shape {
+                case .Diamond:
+                    Diamond().opacity(fillOpacity)
+                    Diamond().stroke(lineWidth: strokeWidth)
+                case .Squiggle:
+                    Rectangle().opacity(fillOpacity)
+                    Rectangle().stroke(lineWidth: strokeWidth)
+                case .Oval:
+                    Capsule().opacity(fillOpacity)
+                    Capsule().stroke(lineWidth: strokeWidth)
             }
         }
+        
     }
     
     // MARK: - Drawing variables
