@@ -65,11 +65,11 @@ struct SetGame {
     private func createDeck() -> Array<Card> {
         var cards = Array<Card>()
         var id = 0
-        for numberOfShapes in 1...3 {
+        for numberOfShape in Card.NumberOfShape.allCases {
             for shape in Card.Shape.allCases {
                 for color in Card.Color.allCases {
                     for shading in Card.Shading.allCases {
-                        let card = Card(id: id, numberOfShapes: numberOfShapes, shape: shape, color: color, shading: shading)
+                        let card = Card(id: id, numberOfShapes: numberOfShape, shape: shape, color: color, shading: shading)
                         id += 1
                         cards.append(card)
                     }
@@ -160,15 +160,18 @@ struct SetGame {
         var isSelected: Bool = false
         var isMatch: MatchState = .Undetermined
         
-        let numberOfShapes: Int     // 모양 개수
-        let shape: Shape            // 모양
-        let color: Color            // 색깔
-        let shading: Shading        // 음영
+        let numberOfShapes: NumberOfShape   // 모양 개수
+        let shape: Shape                    // 모양
+        let color: Color                    // 색깔
+        let shading: Shading                // 음영
         
         enum MatchState {
             case Match, NotMatch, Undetermined
         }
         
+        enum NumberOfShape: Int, CaseIterable {
+            case One = 1, Two = 2, Three = 3
+        }
         enum Shape: CaseIterable {
             case Diamond, Squiggle, Oval
         }
