@@ -34,8 +34,8 @@ struct CardView: View {
                     Diamond().opacity(fillOpacity)
                     Diamond().stroke(lineWidth: strokeWidth)
                 case .Squiggle:
-                    Rectangle().opacity(fillOpacity)
-                    Rectangle().stroke(lineWidth: strokeWidth)
+                    Squiggle().opacity(fillOpacity)
+                    Squiggle().stroke(lineWidth: strokeWidth)
                 case .Oval:
                     Capsule().opacity(fillOpacity)
                     Capsule().stroke(lineWidth: strokeWidth)

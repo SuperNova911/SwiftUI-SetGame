@@ -17,7 +17,7 @@ SwiftUI로 구현한 [Set Game](https://en.wikipedia.org/wiki/Set_(card_game))
 
 - [ ] 1. Have your cards fly in from a deck View located somewhere on screen. This is a little bit more difficult than flying to a random location because figuring out where some other View is will require some investigation on your part.
 - [ ] 2. If you deal from a deck, have the cards be “face down” while on the deck and then flip over as they fly out to their locations when they are dealt.
-- [ ] 3. Draw the actual squiggle instead of using a rectangle.
+- [x] 3. Draw the actual squiggle instead of using a rectangle.
 - [ ] 4. Draw the actual striped “shading” instead of using a semi-transparent color.
 - [ ] 5. When cards match, provide some exciting animation. In other words, use animation to show that cards are matched in Required Task 7.
 - [ ] 6. Make your fly away more exciting (maybe the cards spin as they fly away?).
