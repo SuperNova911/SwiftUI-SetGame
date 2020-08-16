@@ -15,7 +15,7 @@ SwiftUI로 구현한 [Set Game](https://en.wikipedia.org/wiki/Set_(card_game))
 
 19/19 구현 완료
 
-[필수 구현 과제 목록](./Misc/RequiredTasks)
+[필수 구현 과제 목록](./Misc/RequiredTasks.md)
 
 
 
