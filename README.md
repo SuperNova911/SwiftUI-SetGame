@@ -9,7 +9,7 @@ SwiftUI로 구현한 [Set Game](https://en.wikipedia.org/wiki/Set_(card_game))
 
 
 
-<img src="./Misc/ScreenShot Stripe.png" alt="Preview" style="zoom: 33%;" />
+<img src="./Misc/ScreenShot Stripe.png" alt="Preview" width="40%" />
 
 ## Required Tasks ✅
 
