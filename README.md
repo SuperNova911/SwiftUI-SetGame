@@ -7,6 +7,10 @@ SwiftUI로 구현한 [Set Game](https://en.wikipedia.org/wiki/Set_(card_game))
 - [강의 자료 페이지 (과제, 데모 코드, 강의 슬라이드 등)](https://cs193p.sites.stanford.edu)
 - [Set Game 구현하기 과제 PDF](https://cs193p.sites.stanford.edu/sites/g/files/sbiybj16636/files/media/file/assignment_3.pdf)
 
+
+
+<img src="./Misc/ScreenShot Stripe.png" alt="Preview" style="zoom: 33%;" />
+
 ## Required Tasks ✅
 
 19/19 구현 완료
