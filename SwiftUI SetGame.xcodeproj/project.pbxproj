@@ -19,6 +19,8 @@
 		5138EA5E24DDB29000CCBEED /* SetGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5138EA5A24DDB29000CCBEED /* SetGameView.swift */; };
 		5138EA5F24DDB29000CCBEED /* SetGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5138EA5B24DDB29000CCBEED /* SetGame.swift */; };
 		5138EA6124E69BE100CCBEED /* Squiggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5138EA6024E69BE100CCBEED /* Squiggle.swift */; };
+		51CB12A124E93C7D003D2613 /* VStripe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CB12A024E93C7D003D2613 /* VStripe.swift */; };
+		51CB12A324E947F7003D2613 /* Shading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CB12A224E947F7003D2613 /* Shading.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		5138EA5A24DDB29000CCBEED /* SetGameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetGameView.swift; sourceTree = "<group>"; };
 		5138EA5B24DDB29000CCBEED /* SetGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetGame.swift; sourceTree = "<group>"; };
 		5138EA6024E69BE100CCBEED /* Squiggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Squiggle.swift; sourceTree = "<group>"; };
+		51CB12A024E93C7D003D2613 /* VStripe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VStripe.swift; sourceTree = "<group>"; };
+		51CB12A224E947F7003D2613 /* Shading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shading.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,8 +77,10 @@
 				5138EA5B24DDB29000CCBEED /* SetGame.swift */,
 				5138EA5824DDB29000CCBEED /* SetGameViewModel.swift */,
 				5138EA5A24DDB29000CCBEED /* SetGameView.swift */,
+				51CB12A224E947F7003D2613 /* Shading.swift */,
 				5138EA5024DDB26A00CCBEED /* Diamond.swift */,
 				5138EA6024E69BE100CCBEED /* Squiggle.swift */,
+				51CB12A024E93C7D003D2613 /* VStripe.swift */,
 				5138EA5424DDB27900CCBEED /* Array+Identifiable.swift */,
 				5138EA5224DDB27900CCBEED /* Grid.swift */,
 				5138EA5324DDB27900CCBEED /* GridLayout.swift */,
@@ -162,6 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51CB12A124E93C7D003D2613 /* VStripe.swift in Sources */,
 				5138EA6124E69BE100CCBEED /* Squiggle.swift in Sources */,
 				5138EA5D24DDB29000CCBEED /* CardView.swift in Sources */,
 				5138EA5F24DDB29000CCBEED /* SetGame.swift in Sources */,
@@ -171,6 +178,7 @@
 				5138EA5C24DDB29000CCBEED /* SetGameViewModel.swift in Sources */,
 				5138EA5E24DDB29000CCBEED /* SetGameView.swift in Sources */,
 				5138EA5524DDB27900CCBEED /* Grid.swift in Sources */,
+				51CB12A324E947F7003D2613 /* Shading.swift in Sources */,
 				5138EA5624DDB27900CCBEED /* GridLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

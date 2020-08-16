@@ -18,7 +18,7 @@ struct CardView: View {
             
             VStack(spacing: shapeSpacing) {
                 ForEach(0..<card.numberOfShapes.rawValue) { _ in
-                    shapeBody(for: card.shape, strokeWidth: shapeEdgeWidth, fillOpacity: shapeOpacity)
+                    shapeBody()
                         .aspectRatio(shapeAspectRatio, contentMode: .fit)
                 }
             }
@@ -27,21 +27,21 @@ struct CardView: View {
         }
     }
     
-    private func shapeBody(for shape: SetGame.Card.Shape, strokeWidth: CGFloat, fillOpacity: Double) -> some View {
+    // 카드의 모양과 음영에 맞는 뷰 생성
+    private func shapeBody() -> some View {
         ZStack {
-            switch shape {
+            switch card.shape {
                 case .Diamond:
-                    Diamond().opacity(fillOpacity)
-                    Diamond().stroke(lineWidth: strokeWidth)
+                    Diamond().shading(card.shading)
+                    Diamond().stroke(lineWidth: shapeEdgeWidth)
                 case .Squiggle:
-                    Squiggle().opacity(fillOpacity)
-                    Squiggle().stroke(lineWidth: strokeWidth)
+                    Squiggle().shading(card.shading)
+                    Squiggle().stroke(lineWidth: shapeEdgeWidth)
                 case .Oval:
-                    Capsule().opacity(fillOpacity)
-                    Capsule().stroke(lineWidth: strokeWidth)
+                    Capsule().shading(card.shading)
+                    Capsule().stroke(lineWidth: shapeEdgeWidth)
             }
         }
-        
     }
     
     // MARK: - Drawing variables

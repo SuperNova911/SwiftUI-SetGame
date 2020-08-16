@@ -61,6 +61,7 @@ struct Squiggle_Previews: PreviewProvider {
         ZStack {
             RoundedRectangle(cornerRadius: 10).stroke(lineWidth: 3)
             Squiggle()
+                .shading(.Striped)
                 .aspectRatio(2, contentMode: .fit)
         }
         .foregroundColor(.blue)
